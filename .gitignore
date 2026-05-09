@@ -1,0 +1,43 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Data files (too large for GitHub)
+data/*.parquet
+data/*.jsonl
+data/*.zip
+
+# Model weights (use a download link instead)
+models/
+*.bin
+*.safetensors
+*.gguf
+
+# MLflow local data (commit artifacts separately)
+mlruns/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# IDE settings
+.vscode/
+.idea/
+
+# Secrets
+.env
+*.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Results (generated, not source)
+results/*.jsonl
+results/*.log
+results/*.csv
+results/*.png
