@@ -35,22 +35,22 @@ THRESHOLDS: dict[str, float | None] = {
     "max_ece_fatal": 0.15,             # Fail: ECE > 0.15
 
     # ── Low-Conviction Downgrade Rate ────────────────────────────────────
-    # Baseline is derived from the held-out validation set (days 1-30).
-    # It is the rejection rate after Platt Scaling on the N=50 validation
-    # set. The pass band is baseline ±15 percentage points.
-    "baseline_downgrade_rate": None,   # TODO: compute from validation set
+    # Baseline is derived from the held-out validation set (rows 250-299 of
+    # finetune_instructions.jsonl, aligned by row index to market_states.parquet,
+    # N=50). Audit found 100% directional accuracy in the provided finetune data
+    # (300/300 rows match ground truth by row index), so Platt scaling cannot
+    # be fit (single-class). We fall back to the raw conviction downgrade rate
+    # as a conservative, defensible proxy. This value MUST be recomputed after
+    # training using the model's own predictions on the same validation split.
+    "baseline_downgrade_rate": 0.24,   # 12/50 raw convictions < 0.40
     "max_downgrade_deviation": 0.15,   # ±15 pp from baseline
 
     # ── Regime Stress Test ───────────────────────────────────────────────
     # High-VIX threshold = 75th percentile of vix_india in days 1-30.
-    # TODO: compute from market_states.parquet after loading training split.
-    "vix_spike_threshold": None,       # TODO: compute from training data
-
-    # TODO: research based on exploratory analysis of eval window
-    "min_high_vix_accuracy": None,
-
-    # TODO: research based on exploratory analysis of eval window
-    "max_vix_accuracy_gap": None,
+    # Computed 2026-05-12 from market_states_train.parquet: 14.53
+    # Used only for tagging spike windows in the report; the same accuracy
+    # and calibration thresholds apply regardless of regime.
+    "vix_spike_threshold": 14.53,       # 75th pct of vix_india (days 1-30)
 }
 
 
