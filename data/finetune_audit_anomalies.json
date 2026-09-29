@@ -1,0 +1,464 @@
+[
+  {
+    "row": 12,
+    "instruction": "You are a trading signal generator for NIFTY 50 options. Analyze the provided market state snapshot and generate a structured trading signal. Return ONLY valid JSON matching the required schema. Schema: {\"direction\": \"CE\"|\"PE\"|\"NEUTRAL\", \"conviction\": float 0.0-1.0, \"horizon\": \"intraday\"|\"next_session\"}",
+    "input": {
+      "nifty_spot": 22961.81,
+      "atm_iv": 13.6814,
+      "iv_skew_25d": 3.0701,
+      "pcr": 0.7169,
+      "adx_14": 29.35,
+      "realized_vol_5d": 9.7013,
+      "vix_india": 14.08,
+      "dte_nearest": 2,
+      "moneyness_band": "ATM",
+      "timestamp": "2024-10-01T14:45:00+05:30"
+    },
+    "output": {
+      "direction": "NEUTRAL",
+      "conviction": 0.31,
+      "horizon": "intraday"
+    }
+  },
+  {
+    "row": 14,
+    "instruction": "You are a trading signal generator for NIFTY 50 options. Analyze the provided market state snapshot and generate a structured trading signal. Return ONLY valid JSON matching the required schema. Schema: {\"direction\": \"CE\"|\"PE\"|\"NEUTRAL\", \"conviction\": float 0.0-1.0, \"horizon\": \"intraday\"|\"next_session\"}",
+    "input": {
+      "nifty_spot": 22921.41,
+      "atm_iv": 13.1438,
+      "iv_skew_25d": 3.8095,
+      "pcr": 1.236,
+      "adx_14": 25.5,
+      "realized_vol_5d": 12.8794,
+      "vix_india": 14.05,
+      "dte_nearest": 1,
+      "moneyness_band": "ATM",
+      "timestamp": "2024-10-02T09:15:00+05:30"
+    },
+    "output": {
+      "direction": "NEUTRAL",
+      "conviction": 0.32,
+      "horizon": "next_session"
+    }
+  },
+  {
+    "row": 27,
+    "instruction": "You are a trading signal generator for NIFTY 50 options. Analyze the provided market state snapshot and generate a structured trading signal. Return ONLY valid JSON matching the required schema. Schema: {\"direction\": \"CE\"|\"PE\"|\"NEUTRAL\", \"conviction\": float 0.0-1.0, \"horizon\": \"intraday\"|\"next_session\"}",
+    "input": {
+      "nifty_spot": 22947.09,
+      "atm_iv": 13.3353,
+      "iv_skew_25d": 3.1556,
+      "pcr": 0.7073,
+      "adx_14": 24.8,
+      "realized_vol_5d": 10.291,
+      "vix_india": 14.13,
+      "dte_nearest": 0,
+      "moneyness_band": "ATM",
+      "timestamp": "2024-10-03T09:15:00+05:30"
+    },
+    "output": {
+      "direction": "NEUTRAL",
+      "conviction": 0.32,
+      "horizon": "next_session"
+    }
+  },
+  {
+    "row": 31,
+    "instruction": "You are a trading signal generator for NIFTY 50 options. Analyze the provided market state snapshot and generate a structured trading signal. Return ONLY valid JSON matching the required schema. Schema: {\"direction\": \"CE\"|\"PE\"|\"NEUTRAL\", \"conviction\": float 0.0-1.0, \"horizon\": \"intraday\"|\"next_session\"}",
+    "input": {
+      "nifty_spot": 23056.66,
+      "atm_iv": 12.8956,
+      "iv_skew_25d": 1.4429,
+      "pcr": 1.064,
+      "adx_14": 24.8,
+      "realized_vol_5d": 13.9562,
+      "vix_india": 14.13,
+      "dte_nearest": 0,
+      "moneyness_band": "ATM",
+      "timestamp": "2024-10-03T11:15:00+05:30"
+    },
+    "output": {
+      "direction": "NEUTRAL",
+      "conviction": 0.32,
+      "horizon": "next_session"
+    }
+  },
+  {
+    "row": 32,
+    "instruction": "You are a trading signal generator for NIFTY 50 options. Analyze the provided market state snapshot and generate a structured trading signal. Return ONLY valid JSON matching the required schema. Schema: {\"direction\": \"CE\"|\"PE\"|\"NEUTRAL\", \"conviction\": float 0.0-1.0, \"horizon\": \"intraday\"|\"next_session\"}",
+    "input": {
+      "nifty_spot": 23050.84,
+      "atm_iv": 12.9683,
+      "iv_skew_25d": 2.1699,
+      "pcr": 0.6741,
+      "adx_14": 24.8,
+      "realized_vol_5d": 9.8058,
+      "vix_india": 14.13,
+      "dte_nearest": 0,
+      "moneyness_band": "ATM",
+      "timestamp": "2024-10-03T11:45:00+05:30"
+    },
+    "output": {
+      "direction": "NEUTRAL",
+      "conviction": 0.32,
+      "horizon": "next_session"
+    }
+  },
+  {
+    "row": 103,
+    "instruction": "You are a trading signal generator for NIFTY 50 options. Analyze the provided market state snapshot and generate a structured trading signal. Return ONLY valid JSON matching the required schema. Schema: {\"direction\": \"CE\"|\"PE\"|\"NEUTRAL\", \"conviction\": float 0.0-1.0, \"horizon\": \"intraday\"|\"next_session\"}",
+    "input": {
+      "nifty_spot": 22468.54,
+      "atm_iv": 11.7961,
+      "iv_skew_25d": 1.4475,
+      "pcr": 0.8332,
+      "adx_14": 29.75,
+      "realized_vol_5d": 10.2925,
+      "vix_india": 13.67,
+      "dte_nearest": 0,
+      "moneyness_band": "1pct_OTM",
+      "timestamp": "2024-10-10T14:45:00+05:30"
+    },
+    "output": {
+      "direction": "NEUTRAL",
+      "conviction": 0.33,
+      "horizon": "next_session"
+    }
+  },
+  {
+    "row": 134,
+    "instruction": "You are a trading signal generator for NIFTY 50 options. Analyze the provided market state snapshot and generate a structured trading signal. Return ONLY valid JSON matching the required schema. Schema: {\"direction\": \"CE\"|\"PE\"|\"NEUTRAL\", \"conviction\": float 0.0-1.0, \"horizon\": \"intraday\"|\"next_session\"}",
+    "input": {
+      "nifty_spot": 22444.19,
+      "atm_iv": 10.5577,
+      "iv_skew_25d": 0.6077,
+      "pcr": 1.0257,
+      "adx_14": 27.22,
+      "realized_vol_5d": 9.3542,
+      "vix_india": 13.33,
+      "dte_nearest": 2,
+      "moneyness_band": "ATM",
+      "timestamp": "2024-10-15T10:45:00+05:30"
+    },
+    "output": {
+      "direction": "NEUTRAL",
+      "conviction": 0.34,
+      "horizon": "intraday"
+    }
+  },
+  {
+    "row": 136,
+    "instruction": "You are a trading signal generator for NIFTY 50 options. Analyze the provided market state snapshot and generate a structured trading signal. Return ONLY valid JSON matching the required schema. Schema: {\"direction\": \"CE\"|\"PE\"|\"NEUTRAL\", \"conviction\": float 0.0-1.0, \"horizon\": \"intraday\"|\"next_session\"}",
+    "input": {
+      "nifty_spot": 22387.5,
+      "atm_iv": 10.0,
+      "iv_skew_25d": 0.712,
+      "pcr": 1.1561,
+      "adx_14": 27.22,
+      "realized_vol_5d": 9.4908,
+      "vix_india": 13.33,
+      "dte_nearest": 2,
+      "moneyness_band": "1pct_OTM",
+      "timestamp": "2024-10-15T11:45:00+05:30"
+    },
+    "output": {
+      "direction": "NEUTRAL",
+      "conviction": 0.34,
+      "horizon": "intraday"
+    }
+  },
+  {
+    "row": 163,
+    "instruction": "You are a trading signal generator for NIFTY 50 options. Analyze the provided market state snapshot and generate a structured trading signal. Return ONLY valid JSON matching the required schema. Schema: {\"direction\": \"CE\"|\"PE\"|\"NEUTRAL\", \"conviction\": float 0.0-1.0, \"horizon\": \"intraday\"|\"next_session\"}",
+    "input": {
+      "nifty_spot": 22421.57,
+      "atm_iv": 10.3057,
+      "iv_skew_25d": 3.1155,
+      "pcr": 0.879,
+      "adx_14": 26.94,
+      "realized_vol_5d": 11.2967,
+      "vix_india": 13.04,
+      "dte_nearest": 0,
+      "moneyness_band": "ATM",
+      "timestamp": "2024-10-17T12:15:00+05:30"
+    },
+    "output": {
+      "direction": "NEUTRAL",
+      "conviction": 0.31,
+      "horizon": "next_session"
+    }
+  },
+  {
+    "row": 165,
+    "instruction": "You are a trading signal generator for NIFTY 50 options. Analyze the provided market state snapshot and generate a structured trading signal. Return ONLY valid JSON matching the required schema. Schema: {\"direction\": \"CE\"|\"PE\"|\"NEUTRAL\", \"conviction\": float 0.0-1.0, \"horizon\": \"intraday\"|\"next_session\"}",
+    "input": {
+      "nifty_spot": 22425.17,
+      "atm_iv": 10.2625,
+      "iv_skew_25d": 2.6736,
+      "pcr": 0.9965,
+      "adx_14": 26.94,
+      "realized_vol_5d": 9.4452,
+      "vix_india": 13.04,
+      "dte_nearest": 0,
+      "moneyness_band": "1pct_OTM",
+      "timestamp": "2024-10-17T13:15:00+05:30"
+    },
+    "output": {
+      "direction": "NEUTRAL",
+      "conviction": 0.31,
+      "horizon": "next_session"
+    }
+  },
+  {
+    "row": 172,
+    "instruction": "You are a trading signal generator for NIFTY 50 options. Analyze the provided market state snapshot and generate a structured trading signal. Return ONLY valid JSON matching the required schema. Schema: {\"direction\": \"CE\"|\"PE\"|\"NEUTRAL\", \"conviction\": float 0.0-1.0, \"horizon\": \"intraday\"|\"next_session\"}",
+    "input": {
+      "nifty_spot": 22105.78,
+      "atm_iv": 10.0,
+      "iv_skew_25d": -0.463,
+      "pcr": 0.6807,
+      "adx_14": 30.25,
+      "realized_vol_5d": 9.4783,
+      "vix_india": 12.67,
+      "dte_nearest": 6,
+      "moneyness_band": "ATM",
+      "timestamp": "2024-10-18T10:15:00+05:30"
+    },
+    "output": {
+      "direction": "NEUTRAL",
+      "conviction": 0.31,
+      "horizon": "intraday"
+    }
+  },
+  {
+    "row": 179,
+    "instruction": "You are a trading signal generator for NIFTY 50 options. Analyze the provided market state snapshot and generate a structured trading signal. Return ONLY valid JSON matching the required schema. Schema: {\"direction\": \"CE\"|\"PE\"|\"NEUTRAL\", \"conviction\": float 0.0-1.0, \"horizon\": \"intraday\"|\"next_session\"}",
+    "input": {
+      "nifty_spot": 22036.2,
+      "atm_iv": 10.2334,
+      "iv_skew_25d": 0.0727,
+      "pcr": 0.9939,
+      "adx_14": 30.25,
+      "realized_vol_5d": 10.256,
+      "vix_india": 12.67,
+      "dte_nearest": 6,
+      "moneyness_band": "ATM",
+      "timestamp": "2024-10-18T13:45:00+05:30"
+    },
+    "output": {
+      "direction": "NEUTRAL",
+      "conviction": 0.33,
+      "horizon": "intraday"
+    }
+  },
+  {
+    "row": 183,
+    "instruction": "You are a trading signal generator for NIFTY 50 options. Analyze the provided market state snapshot and generate a structured trading signal. Return ONLY valid JSON matching the required schema. Schema: {\"direction\": \"CE\"|\"PE\"|\"NEUTRAL\", \"conviction\": float 0.0-1.0, \"horizon\": \"intraday\"|\"next_session\"}",
+    "input": {
+      "nifty_spot": 21883.96,
+      "atm_iv": 10.0,
+      "iv_skew_25d": 1.483,
+      "pcr": 0.9755,
+      "adx_14": 29.2,
+      "realized_vol_5d": 10.8617,
+      "vix_india": 13.0,
+      "dte_nearest": 3,
+      "moneyness_band": "2pct_OTM",
+      "timestamp": "2024-10-21T09:15:00+05:30"
+    },
+    "output": {
+      "direction": "NEUTRAL",
+      "conviction": 0.33,
+      "horizon": "intraday"
+    }
+  },
+  {
+    "row": 196,
+    "instruction": "You are a trading signal generator for NIFTY 50 options. Analyze the provided market state snapshot and generate a structured trading signal. Return ONLY valid JSON matching the required schema. Schema: {\"direction\": \"CE\"|\"PE\"|\"NEUTRAL\", \"conviction\": float 0.0-1.0, \"horizon\": \"intraday\"|\"next_session\"}",
+    "input": {
+      "nifty_spot": 21769.05,
+      "atm_iv": 11.4271,
+      "iv_skew_25d": -0.5512,
+      "pcr": 0.6542,
+      "adx_14": 28.19,
+      "realized_vol_5d": 11.5636,
+      "vix_india": 12.87,
+      "dte_nearest": 2,
+      "moneyness_band": "ATM",
+      "timestamp": "2024-10-22T09:15:00+05:30"
+    },
+    "output": {
+      "direction": "NEUTRAL",
+      "conviction": 0.31,
+      "horizon": "intraday"
+    }
+  },
+  {
+    "row": 200,
+    "instruction": "You are a trading signal generator for NIFTY 50 options. Analyze the provided market state snapshot and generate a structured trading signal. Return ONLY valid JSON matching the required schema. Schema: {\"direction\": \"CE\"|\"PE\"|\"NEUTRAL\", \"conviction\": float 0.0-1.0, \"horizon\": \"intraday\"|\"next_session\"}",
+    "input": {
+      "nifty_spot": 21800.42,
+      "atm_iv": 11.2964,
+      "iv_skew_25d": 0.7395,
+      "pcr": 0.6634,
+      "adx_14": 28.19,
+      "realized_vol_5d": 8.9284,
+      "vix_india": 12.87,
+      "dte_nearest": 2,
+      "moneyness_band": "ATM",
+      "timestamp": "2024-10-22T11:15:00+05:30"
+    },
+    "output": {
+      "direction": "NEUTRAL",
+      "conviction": 0.32,
+      "horizon": "intraday"
+    }
+  },
+  {
+    "row": 205,
+    "instruction": "You are a trading signal generator for NIFTY 50 options. Analyze the provided market state snapshot and generate a structured trading signal. Return ONLY valid JSON matching the required schema. Schema: {\"direction\": \"CE\"|\"PE\"|\"NEUTRAL\", \"conviction\": float 0.0-1.0, \"horizon\": \"intraday\"|\"next_session\"}",
+    "input": {
+      "nifty_spot": 21770.77,
+      "atm_iv": 11.5949,
+      "iv_skew_25d": 1.3778,
+      "pcr": 0.6422,
+      "adx_14": 28.19,
+      "realized_vol_5d": 11.9298,
+      "vix_india": 12.87,
+      "dte_nearest": 2,
+      "moneyness_band": "1pct_OTM",
+      "timestamp": "2024-10-22T13:45:00+05:30"
+    },
+    "output": {
+      "direction": "NEUTRAL",
+      "conviction": 0.31,
+      "horizon": "intraday"
+    }
+  },
+  {
+    "row": 222,
+    "instruction": "You are a trading signal generator for NIFTY 50 options. Analyze the provided market state snapshot and generate a structured trading signal. Return ONLY valid JSON matching the required schema. Schema: {\"direction\": \"CE\"|\"PE\"|\"NEUTRAL\", \"conviction\": float 0.0-1.0, \"horizon\": \"intraday\"|\"next_session\"}",
+    "input": {
+      "nifty_spot": 21303.76,
+      "atm_iv": 10.0,
+      "iv_skew_25d": 3.1756,
+      "pcr": 0.7492,
+      "adx_14": 26.58,
+      "realized_vol_5d": 7.0172,
+      "vix_india": 13.72,
+      "dte_nearest": 0,
+      "moneyness_band": "ATM",
+      "timestamp": "2024-10-24T09:15:00+05:30"
+    },
+    "output": {
+      "direction": "NEUTRAL",
+      "conviction": 0.33,
+      "horizon": "next_session"
+    }
+  },
+  {
+    "row": 256,
+    "instruction": "You are a trading signal generator for NIFTY 50 options. Analyze the provided market state snapshot and generate a structured trading signal. Return ONLY valid JSON matching the required schema. Schema: {\"direction\": \"CE\"|\"PE\"|\"NEUTRAL\", \"conviction\": float 0.0-1.0, \"horizon\": \"intraday\"|\"next_session\"}",
+    "input": {
+      "nifty_spot": 20719.75,
+      "atm_iv": 10.7277,
+      "iv_skew_25d": 1.9122,
+      "pcr": 1.2955,
+      "adx_14": 25.42,
+      "realized_vol_5d": 11.7588,
+      "vix_india": 15.1,
+      "dte_nearest": 3,
+      "moneyness_band": "ATM",
+      "timestamp": "2024-10-28T13:15:00+05:30"
+    },
+    "output": {
+      "direction": "NEUTRAL",
+      "conviction": 0.31,
+      "horizon": "intraday"
+    }
+  },
+  {
+    "row": 267,
+    "instruction": "You are a trading signal generator for NIFTY 50 options. Analyze the provided market state snapshot and generate a structured trading signal. Return ONLY valid JSON matching the required schema. Schema: {\"direction\": \"CE\"|\"PE\"|\"NEUTRAL\", \"conviction\": float 0.0-1.0, \"horizon\": \"intraday\"|\"next_session\"}",
+    "input": {
+      "nifty_spot": 20480.51,
+      "atm_iv": 10.2892,
+      "iv_skew_25d": 0.118,
+      "pcr": 0.9184,
+      "adx_14": 25.81,
+      "realized_vol_5d": 8.9061,
+      "vix_india": 15.37,
+      "dte_nearest": 2,
+      "moneyness_band": "ATM",
+      "timestamp": "2024-10-29T12:15:00+05:30"
+    },
+    "output": {
+      "direction": "NEUTRAL",
+      "conviction": 0.32,
+      "horizon": "intraday"
+    }
+  },
+  {
+    "row": 271,
+    "instruction": "You are a trading signal generator for NIFTY 50 options. Analyze the provided market state snapshot and generate a structured trading signal. Return ONLY valid JSON matching the required schema. Schema: {\"direction\": \"CE\"|\"PE\"|\"NEUTRAL\", \"conviction\": float 0.0-1.0, \"horizon\": \"intraday\"|\"next_session\"}",
+    "input": {
+      "nifty_spot": 20604.76,
+      "atm_iv": 10.0,
+      "iv_skew_25d": 1.3623,
+      "pcr": 0.9569,
+      "adx_14": 25.81,
+      "realized_vol_5d": 8.2489,
+      "vix_india": 15.37,
+      "dte_nearest": 2,
+      "moneyness_band": "2pct_OTM",
+      "timestamp": "2024-10-29T14:15:00+05:30"
+    },
+    "output": {
+      "direction": "NEUTRAL",
+      "conviction": 0.34,
+      "horizon": "intraday"
+    }
+  },
+  {
+    "row": 296,
+    "instruction": "You are a trading signal generator for NIFTY 50 options. Analyze the provided market state snapshot and generate a structured trading signal. Return ONLY valid JSON matching the required schema. Schema: {\"direction\": \"CE\"|\"PE\"|\"NEUTRAL\", \"conviction\": float 0.0-1.0, \"horizon\": \"intraday\"|\"next_session\"}",
+    "input": {
+      "nifty_spot": 20661.34,
+      "atm_iv": 11.4251,
+      "iv_skew_25d": -0.5336,
+      "pcr": 1.0594,
+      "adx_14": 29.17,
+      "realized_vol_5d": 8.1538,
+      "vix_india": 14.31,
+      "dte_nearest": 0,
+      "moneyness_band": "1pct_OTM",
+      "timestamp": "2024-10-31T13:45:00+05:30"
+    },
+    "output": {
+      "direction": "NEUTRAL",
+      "conviction": 0.31,
+      "horizon": "next_session"
+    }
+  },
+  {
+    "row": 300,
+    "instruction": "You are a trading signal generator for NIFTY 50 options. Analyze the provided market state snapshot and generate a structured trading signal. Return ONLY valid JSON matching the required schema. Schema: {\"direction\": \"CE\"|\"PE\"|\"NEUTRAL\", \"conviction\": float 0.0-1.0, \"horizon\": \"intraday\"|\"next_session\"}",
+    "input": {
+      "nifty_spot": 20802.87,
+      "atm_iv": 11.9724,
+      "iv_skew_25d": 2.9236,
+      "pcr": 1.2773,
+      "adx_14": 30.39,
+      "realized_vol_5d": 12.3945,
+      "vix_india": 14.48,
+      "dte_nearest": 6,
+      "moneyness_band": "ATM",
+      "timestamp": "2024-11-01T09:15:00+05:30"
+    },
+    "output": {
+      "direction": "NEUTRAL",
+      "conviction": 0.33,
+      "horizon": "intraday"
+    }
+  }
+]

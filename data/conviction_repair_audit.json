@@ -1,0 +1,749 @@
+{
+  "summary": {
+    "total_rows": 300,
+    "clean_rows": 255,
+    "malformed_rows": 45,
+    "repaired_rows": 45
+  },
+  "methodology": {
+    "approach": "Neighbor-based average imputation",
+    "description": "All malformed rows were repaired using the mean conviction of their 3 nearest clean neighbors in weighted feature space.",
+    "n_neighbors": 3,
+    "weighting": "Spearman correlation-based feature weights"
+  },
+  "feature_weights": {
+    "nifty_spot": 0.12146695338426226,
+    "atm_iv": 0.04781271656803165,
+    "iv_skew_25d": 0.04437462360436504,
+    "pcr": 0.03806844293230273,
+    "adx_14": 0.09151458994912329,
+    "realized_vol_5d": 0.1319798516580528,
+    "vix_india": 0.1999558570625903,
+    "dte_nearest": 0.006356626990811765,
+    "moneyness_1pct_OTM": 0.056611003507639146,
+    "moneyness_2pct_OTM": 0.12441654257221928,
+    "moneyness_ATM": 0.13744279177060179
+  },
+  "repair_decisions": [
+    {
+      "original_idx": 47,
+      "original_label": "0.8 (high)",
+      "new_conviction": 0.443,
+      "estimated_mean": 0.44333333333333336,
+      "neighbors": [
+        0.52,
+        0.38,
+        0.43
+      ],
+      "neighbor_ids": [
+        "234f365a-406c-5f25-8266-dfcb9cbb89e9",
+        "6ef8390a-e95b-596b-ba21-abd92dbe4f6f",
+        "9ac81239-dfa8-5683-afa3-b16ee387e020"
+      ]
+    },
+    {
+      "original_idx": 48,
+      "original_label": "high",
+      "new_conviction": 0.5,
+      "estimated_mean": 0.5,
+      "neighbors": [
+        0.46,
+        0.52,
+        0.52
+      ],
+      "neighbor_ids": [
+        "334e7d7c-e3a3-5a87-8827-cbdf44cf7033",
+        "fc07db77-3b24-5abd-b89d-4f80d22d6ad9",
+        "bbd4877e-6f1f-58b8-af07-5640e69f8a9d"
+      ]
+    },
+    {
+      "original_idx": 49,
+      "original_label": "moderate",
+      "new_conviction": 0.383,
+      "estimated_mean": 0.38333333333333336,
+      "neighbors": [
+        0.52,
+        0.31,
+        0.32
+      ],
+      "neighbor_ids": [
+        "234f365a-406c-5f25-8266-dfcb9cbb89e9",
+        "76389d80-a623-5c4d-9790-998a497c7b3d",
+        "bf7bfb6f-f9ca-59ed-8d32-4988072aa99e"
+      ]
+    },
+    {
+      "original_idx": 50,
+      "original_label": "low",
+      "new_conviction": 0.513,
+      "estimated_mean": 0.5133333333333333,
+      "neighbors": [
+        0.56,
+        0.52,
+        0.46
+      ],
+      "neighbor_ids": [
+        "e1c32b26-fb17-5cf5-85ff-c68ea3279a6a",
+        "bbd4877e-6f1f-58b8-af07-5640e69f8a9d",
+        "334e7d7c-e3a3-5a87-8827-cbdf44cf7033"
+      ]
+    },
+    {
+      "original_idx": 51,
+      "original_label": "high confidence",
+      "new_conviction": 0.463,
+      "estimated_mean": 0.4633333333333334,
+      "neighbors": [
+        0.52,
+        0.49,
+        0.38
+      ],
+      "neighbor_ids": [
+        "234f365a-406c-5f25-8266-dfcb9cbb89e9",
+        "4fcf5a48-00bc-516a-8223-54879617a9ba",
+        "6ef8390a-e95b-596b-ba21-abd92dbe4f6f"
+      ]
+    },
+    {
+      "original_idx": 52,
+      "original_label": "moderate confidence",
+      "new_conviction": 0.473,
+      "estimated_mean": 0.47333333333333333,
+      "neighbors": [
+        0.47,
+        0.44,
+        0.51
+      ],
+      "neighbor_ids": [
+        "fbf8e89a-1682-5f76-9a50-82cbf16b1a83",
+        "dedb389e-42b9-55e9-9120-b29480b872f9",
+        "00523d95-6ea3-57ef-854e-eedb83578341"
+      ]
+    },
+    {
+      "original_idx": 53,
+      "original_label": "strong",
+      "new_conviction": 0.517,
+      "estimated_mean": 0.5166666666666667,
+      "neighbors": [
+        0.49,
+        0.52,
+        0.54
+      ],
+      "neighbor_ids": [
+        "4fcf5a48-00bc-516a-8223-54879617a9ba",
+        "234f365a-406c-5f25-8266-dfcb9cbb89e9",
+        "44980d48-b043-5dac-b8d4-480f4e1726b5"
+      ]
+    },
+    {
+      "original_idx": 54,
+      "original_label": "weak",
+      "new_conviction": 0.457,
+      "estimated_mean": 0.4566666666666666,
+      "neighbors": [
+        0.44,
+        0.47,
+        0.46
+      ],
+      "neighbor_ids": [
+        "dedb389e-42b9-55e9-9120-b29480b872f9",
+        "fbf8e89a-1682-5f76-9a50-82cbf16b1a83",
+        "9a793695-ac76-5df2-85a7-76ff2cc1fed1"
+      ]
+    },
+    {
+      "original_idx": 55,
+      "original_label": "0.8 (high)",
+      "new_conviction": 0.503,
+      "estimated_mean": 0.5033333333333333,
+      "neighbors": [
+        0.52,
+        0.45,
+        0.54
+      ],
+      "neighbor_ids": [
+        "234f365a-406c-5f25-8266-dfcb9cbb89e9",
+        "664cdb76-6395-5c1d-8014-a17d8e7521e5",
+        "44980d48-b043-5dac-b8d4-480f4e1726b5"
+      ]
+    },
+    {
+      "original_idx": 56,
+      "original_label": "high",
+      "new_conviction": 0.51,
+      "estimated_mean": 0.51,
+      "neighbors": [
+        0.51,
+        0.52,
+        0.5
+      ],
+      "neighbor_ids": [
+        "23335a63-f59b-5c33-b53c-4a78700fa165",
+        "234f365a-406c-5f25-8266-dfcb9cbb89e9",
+        "b75d6349-ad52-570d-9641-368cd65fd01d"
+      ]
+    },
+    {
+      "original_idx": 57,
+      "original_label": "moderate",
+      "new_conviction": 0.507,
+      "estimated_mean": 0.5066666666666667,
+      "neighbors": [
+        0.51,
+        0.52,
+        0.49
+      ],
+      "neighbor_ids": [
+        "5850945f-0b43-5d3b-b9c1-025b83ceecfd",
+        "234f365a-406c-5f25-8266-dfcb9cbb89e9",
+        "23fa5e36-3a1f-5d4f-8d55-94939a754b87"
+      ]
+    },
+    {
+      "original_idx": 58,
+      "original_label": "low",
+      "new_conviction": 0.537,
+      "estimated_mean": 0.5366666666666667,
+      "neighbors": [
+        0.51,
+        0.57,
+        0.53
+      ],
+      "neighbor_ids": [
+        "9b8c045c-2841-5b3c-b39b-45d9378c87a4",
+        "2c79337d-396f-5dfe-b39b-542e8da954f2",
+        "b89f8675-0952-5d57-b2c9-6f4837661e9d"
+      ]
+    },
+    {
+      "original_idx": 59,
+      "original_label": "high confidence",
+      "new_conviction": 0.43,
+      "estimated_mean": 0.43,
+      "neighbors": [
+        0.52,
+        0.32,
+        0.45
+      ],
+      "neighbor_ids": [
+        "234f365a-406c-5f25-8266-dfcb9cbb89e9",
+        "bf7bfb6f-f9ca-59ed-8d32-4988072aa99e",
+        "664cdb76-6395-5c1d-8014-a17d8e7521e5"
+      ]
+    },
+    {
+      "original_idx": 60,
+      "original_label": "moderate confidence",
+      "new_conviction": 0.43,
+      "estimated_mean": 0.43,
+      "neighbors": [
+        0.52,
+        0.45,
+        0.32
+      ],
+      "neighbor_ids": [
+        "234f365a-406c-5f25-8266-dfcb9cbb89e9",
+        "664cdb76-6395-5c1d-8014-a17d8e7521e5",
+        "bf7bfb6f-f9ca-59ed-8d32-4988072aa99e"
+      ]
+    },
+    {
+      "original_idx": 61,
+      "original_label": "strong",
+      "new_conviction": 0.43,
+      "estimated_mean": 0.43,
+      "neighbors": [
+        0.52,
+        0.32,
+        0.45
+      ],
+      "neighbor_ids": [
+        "234f365a-406c-5f25-8266-dfcb9cbb89e9",
+        "bf7bfb6f-f9ca-59ed-8d32-4988072aa99e",
+        "664cdb76-6395-5c1d-8014-a17d8e7521e5"
+      ]
+    },
+    {
+      "original_idx": 62,
+      "original_label": "weak",
+      "new_conviction": 0.497,
+      "estimated_mean": 0.49666666666666665,
+      "neighbors": [
+        0.51,
+        0.49,
+        0.49
+      ],
+      "neighbor_ids": [
+        "a8c0a5b8-8be2-51bb-89da-498d7982a40b",
+        "1d0b1cf4-3f4e-5812-befd-f3197bb9489b",
+        "4fcf5a48-00bc-516a-8223-54879617a9ba"
+      ]
+    },
+    {
+      "original_idx": 63,
+      "original_label": "0.8 (high)",
+      "new_conviction": 0.517,
+      "estimated_mean": 0.5166666666666667,
+      "neighbors": [
+        0.52,
+        0.54,
+        0.49
+      ],
+      "neighbor_ids": [
+        "234f365a-406c-5f25-8266-dfcb9cbb89e9",
+        "44980d48-b043-5dac-b8d4-480f4e1726b5",
+        "4fcf5a48-00bc-516a-8223-54879617a9ba"
+      ]
+    },
+    {
+      "original_idx": 64,
+      "original_label": "high",
+      "new_conviction": 0.517,
+      "estimated_mean": 0.5166666666666667,
+      "neighbors": [
+        0.52,
+        0.54,
+        0.49
+      ],
+      "neighbor_ids": [
+        "234f365a-406c-5f25-8266-dfcb9cbb89e9",
+        "44980d48-b043-5dac-b8d4-480f4e1726b5",
+        "4fcf5a48-00bc-516a-8223-54879617a9ba"
+      ]
+    },
+    {
+      "original_idx": 65,
+      "original_label": "moderate",
+      "new_conviction": 0.45,
+      "estimated_mean": 0.45,
+      "neighbors": [
+        0.52,
+        0.31,
+        0.52
+      ],
+      "neighbor_ids": [
+        "234f365a-406c-5f25-8266-dfcb9cbb89e9",
+        "76389d80-a623-5c4d-9790-998a497c7b3d",
+        "af862c05-54f1-57b9-83cb-85df1a943410"
+      ]
+    },
+    {
+      "original_idx": 66,
+      "original_label": "low",
+      "new_conviction": 0.503,
+      "estimated_mean": 0.5033333333333333,
+      "neighbors": [
+        0.52,
+        0.52,
+        0.47
+      ],
+      "neighbor_ids": [
+        "234f365a-406c-5f25-8266-dfcb9cbb89e9",
+        "af862c05-54f1-57b9-83cb-85df1a943410",
+        "0c8a38e2-6ab7-58cf-81e6-0124b9b93261"
+      ]
+    },
+    {
+      "original_idx": 67,
+      "original_label": "high confidence",
+      "new_conviction": 0.453,
+      "estimated_mean": 0.45333333333333337,
+      "neighbors": [
+        0.38,
+        0.52,
+        0.46
+      ],
+      "neighbor_ids": [
+        "6ef8390a-e95b-596b-ba21-abd92dbe4f6f",
+        "234f365a-406c-5f25-8266-dfcb9cbb89e9",
+        "a47a307e-76ab-50cd-ad7c-402000328b83"
+      ]
+    },
+    {
+      "original_idx": 68,
+      "original_label": "moderate confidence",
+      "new_conviction": 0.493,
+      "estimated_mean": 0.49333333333333335,
+      "neighbors": [
+        0.51,
+        0.5,
+        0.47
+      ],
+      "neighbor_ids": [
+        "00523d95-6ea3-57ef-854e-eedb83578341",
+        "f469dd0d-d38d-5b18-bdcf-47f3ad2974ab",
+        "fbf8e89a-1682-5f76-9a50-82cbf16b1a83"
+      ]
+    },
+    {
+      "original_idx": 69,
+      "original_label": "strong",
+      "new_conviction": 0.48,
+      "estimated_mean": 0.48,
+      "neighbors": [
+        0.49,
+        0.43,
+        0.52
+      ],
+      "neighbor_ids": [
+        "4fcf5a48-00bc-516a-8223-54879617a9ba",
+        "fc3033ee-3547-537c-a501-b9af15a93757",
+        "af862c05-54f1-57b9-83cb-85df1a943410"
+      ]
+    },
+    {
+      "original_idx": 70,
+      "original_label": "weak",
+      "new_conviction": 0.49,
+      "estimated_mean": 0.49,
+      "neighbors": [
+        0.52,
+        0.52,
+        0.43
+      ],
+      "neighbor_ids": [
+        "234f365a-406c-5f25-8266-dfcb9cbb89e9",
+        "af862c05-54f1-57b9-83cb-85df1a943410",
+        "fc3033ee-3547-537c-a501-b9af15a93757"
+      ]
+    },
+    {
+      "original_idx": 71,
+      "original_label": "0.8 (high)",
+      "new_conviction": 0.497,
+      "estimated_mean": 0.49666666666666665,
+      "neighbors": [
+        0.51,
+        0.52,
+        0.46
+      ],
+      "neighbor_ids": [
+        "9b8c045c-2841-5b3c-b39b-45d9378c87a4",
+        "fc07db77-3b24-5abd-b89d-4f80d22d6ad9",
+        "334e7d7c-e3a3-5a87-8827-cbdf44cf7033"
+      ]
+    },
+    {
+      "original_idx": 72,
+      "original_label": "high",
+      "new_conviction": 0.497,
+      "estimated_mean": 0.49666666666666665,
+      "neighbors": [
+        0.51,
+        0.52,
+        0.46
+      ],
+      "neighbor_ids": [
+        "9b8c045c-2841-5b3c-b39b-45d9378c87a4",
+        "fc07db77-3b24-5abd-b89d-4f80d22d6ad9",
+        "334e7d7c-e3a3-5a87-8827-cbdf44cf7033"
+      ]
+    },
+    {
+      "original_idx": 73,
+      "original_label": "moderate",
+      "new_conviction": 0.517,
+      "estimated_mean": 0.5166666666666666,
+      "neighbors": [
+        0.52,
+        0.61,
+        0.42
+      ],
+      "neighbor_ids": [
+        "234f365a-406c-5f25-8266-dfcb9cbb89e9",
+        "1c440f66-927a-5259-93df-520ca9d3288e",
+        "415a1b47-aa51-59d1-9bf0-7ba224dfe091"
+      ]
+    },
+    {
+      "original_idx": 74,
+      "original_label": "low",
+      "new_conviction": 0.467,
+      "estimated_mean": 0.4666666666666666,
+      "neighbors": [
+        0.49,
+        0.48,
+        0.43
+      ],
+      "neighbor_ids": [
+        "4fcf5a48-00bc-516a-8223-54879617a9ba",
+        "31f97b78-54d7-5c67-b33d-e9dcc615729e",
+        "a555f6d2-20ff-5e1c-98c3-2786a3aea0b6"
+      ]
+    },
+    {
+      "original_idx": 75,
+      "original_label": "high confidence",
+      "new_conviction": 0.437,
+      "estimated_mean": 0.4366666666666667,
+      "neighbors": [
+        0.52,
+        0.31,
+        0.48
+      ],
+      "neighbor_ids": [
+        "af862c05-54f1-57b9-83cb-85df1a943410",
+        "76389d80-a623-5c4d-9790-998a497c7b3d",
+        "31f97b78-54d7-5c67-b33d-e9dcc615729e"
+      ]
+    },
+    {
+      "original_idx": 76,
+      "original_label": "moderate confidence",
+      "new_conviction": 0.49,
+      "estimated_mean": 0.49,
+      "neighbors": [
+        0.52,
+        0.52,
+        0.43
+      ],
+      "neighbor_ids": [
+        "af862c05-54f1-57b9-83cb-85df1a943410",
+        "657cffe6-2e5b-51a5-986f-cc39e08c5707",
+        "fc3033ee-3547-537c-a501-b9af15a93757"
+      ]
+    },
+    {
+      "original_idx": 77,
+      "original_label": "strong",
+      "new_conviction": 0.5,
+      "estimated_mean": 0.5,
+      "neighbors": [
+        0.52,
+        0.46,
+        0.52
+      ],
+      "neighbor_ids": [
+        "bbd4877e-6f1f-58b8-af07-5640e69f8a9d",
+        "334e7d7c-e3a3-5a87-8827-cbdf44cf7033",
+        "fc07db77-3b24-5abd-b89d-4f80d22d6ad9"
+      ]
+    },
+    {
+      "original_idx": 78,
+      "original_label": "weak",
+      "new_conviction": 0.497,
+      "estimated_mean": 0.4966666666666666,
+      "neighbors": [
+        0.48,
+        0.43,
+        0.58
+      ],
+      "neighbor_ids": [
+        "31f97b78-54d7-5c67-b33d-e9dcc615729e",
+        "a555f6d2-20ff-5e1c-98c3-2786a3aea0b6",
+        "59e867bf-4e13-5819-a3ba-aad328ccb91d"
+      ]
+    },
+    {
+      "original_idx": 79,
+      "original_label": "0.8 (high)",
+      "new_conviction": 0.447,
+      "estimated_mean": 0.4466666666666666,
+      "neighbors": [
+        0.52,
+        0.42,
+        0.4
+      ],
+      "neighbor_ids": [
+        "af862c05-54f1-57b9-83cb-85df1a943410",
+        "415a1b47-aa51-59d1-9bf0-7ba224dfe091",
+        "05a4edb3-c19f-585d-aa45-de564db1b070"
+      ]
+    },
+    {
+      "original_idx": 80,
+      "original_label": "high",
+      "new_conviction": 0.567,
+      "estimated_mean": 0.5666666666666667,
+      "neighbors": [
+        0.62,
+        0.61,
+        0.47
+      ],
+      "neighbor_ids": [
+        "1a612831-956c-5fe8-aa0f-78d9ed951b17",
+        "1c440f66-927a-5259-93df-520ca9d3288e",
+        "0c8a38e2-6ab7-58cf-81e6-0124b9b93261"
+      ]
+    },
+    {
+      "original_idx": 81,
+      "original_label": "moderate",
+      "new_conviction": 0.423,
+      "estimated_mean": 0.42333333333333334,
+      "neighbors": [
+        0.33,
+        0.43,
+        0.51
+      ],
+      "neighbor_ids": [
+        "72885a4f-d69b-5e5c-a704-609c71c5c3fa",
+        "16f46913-1a66-5c6e-8d50-17e5da88bf1a",
+        "b90b036a-49b9-55f9-9b1b-498e6c28aac1"
+      ]
+    },
+    {
+      "original_idx": 82,
+      "original_label": "low",
+      "new_conviction": 0.56,
+      "estimated_mean": 0.56,
+      "neighbors": [
+        0.62,
+        0.52,
+        0.54
+      ],
+      "neighbor_ids": [
+        "6c631fb5-163b-576c-83f9-317dbabce257",
+        "bbd4877e-6f1f-58b8-af07-5640e69f8a9d",
+        "06e9061b-43aa-57ea-b21c-19ca478399f0"
+      ]
+    },
+    {
+      "original_idx": 83,
+      "original_label": "high confidence",
+      "new_conviction": 0.417,
+      "estimated_mean": 0.4166666666666667,
+      "neighbors": [
+        0.4,
+        0.42,
+        0.43
+      ],
+      "neighbor_ids": [
+        "05a4edb3-c19f-585d-aa45-de564db1b070",
+        "415a1b47-aa51-59d1-9bf0-7ba224dfe091",
+        "fc3033ee-3547-537c-a501-b9af15a93757"
+      ]
+    },
+    {
+      "original_idx": 84,
+      "original_label": "moderate confidence",
+      "new_conviction": 0.407,
+      "estimated_mean": 0.4066666666666667,
+      "neighbors": [
+        0.4,
+        0.4,
+        0.42
+      ],
+      "neighbor_ids": [
+        "87544a28-765a-5cca-b41e-40052ad99531",
+        "05a4edb3-c19f-585d-aa45-de564db1b070",
+        "415a1b47-aa51-59d1-9bf0-7ba224dfe091"
+      ]
+    },
+    {
+      "original_idx": 85,
+      "original_label": "strong",
+      "new_conviction": 0.473,
+      "estimated_mean": 0.47333333333333333,
+      "neighbors": [
+        0.51,
+        0.5,
+        0.41
+      ],
+      "neighbor_ids": [
+        "00523d95-6ea3-57ef-854e-eedb83578341",
+        "f469dd0d-d38d-5b18-bdcf-47f3ad2974ab",
+        "f3fba56b-d5d1-5d43-998b-19b46fb5275e"
+      ]
+    },
+    {
+      "original_idx": 86,
+      "original_label": "weak",
+      "new_conviction": 0.55,
+      "estimated_mean": 0.55,
+      "neighbors": [
+        0.62,
+        0.52,
+        0.51
+      ],
+      "neighbor_ids": [
+        "6c631fb5-163b-576c-83f9-317dbabce257",
+        "bbd4877e-6f1f-58b8-af07-5640e69f8a9d",
+        "b90b036a-49b9-55f9-9b1b-498e6c28aac1"
+      ]
+    },
+    {
+      "original_idx": 87,
+      "original_label": "0.8 (high)",
+      "new_conviction": 0.46,
+      "estimated_mean": 0.45999999999999996,
+      "neighbors": [
+        0.33,
+        0.62,
+        0.43
+      ],
+      "neighbor_ids": [
+        "72885a4f-d69b-5e5c-a704-609c71c5c3fa",
+        "6c631fb5-163b-576c-83f9-317dbabce257",
+        "16f46913-1a66-5c6e-8d50-17e5da88bf1a"
+      ]
+    },
+    {
+      "original_idx": 88,
+      "original_label": "high",
+      "new_conviction": 0.493,
+      "estimated_mean": 0.49333333333333335,
+      "neighbors": [
+        0.51,
+        0.5,
+        0.47
+      ],
+      "neighbor_ids": [
+        "00523d95-6ea3-57ef-854e-eedb83578341",
+        "f469dd0d-d38d-5b18-bdcf-47f3ad2974ab",
+        "fbf8e89a-1682-5f76-9a50-82cbf16b1a83"
+      ]
+    },
+    {
+      "original_idx": 89,
+      "original_label": "moderate",
+      "new_conviction": 0.46,
+      "estimated_mean": 0.45999999999999996,
+      "neighbors": [
+        0.62,
+        0.33,
+        0.43
+      ],
+      "neighbor_ids": [
+        "6c631fb5-163b-576c-83f9-317dbabce257",
+        "72885a4f-d69b-5e5c-a704-609c71c5c3fa",
+        "16f46913-1a66-5c6e-8d50-17e5da88bf1a"
+      ]
+    },
+    {
+      "original_idx": 90,
+      "original_label": "low",
+      "new_conviction": 0.487,
+      "estimated_mean": 0.48666666666666664,
+      "neighbors": [
+        0.52,
+        0.46,
+        0.48
+      ],
+      "neighbor_ids": [
+        "ee2e0210-5793-550b-a56a-507da20cfd6d",
+        "a47a307e-76ab-50cd-ad7c-402000328b83",
+        "31f97b78-54d7-5c67-b33d-e9dcc615729e"
+      ]
+    },
+    {
+      "original_idx": 91,
+      "original_label": "high confidence",
+      "new_conviction": 0.523,
+      "estimated_mean": 0.5233333333333333,
+      "neighbors": [
+        0.4,
+        0.52,
+        0.65
+      ],
+      "neighbor_ids": [
+        "05a4edb3-c19f-585d-aa45-de564db1b070",
+        "ee2e0210-5793-550b-a56a-507da20cfd6d",
+        "c3bc6030-8c08-540f-a9ec-da5571a3cb01"
+      ]
+    }
+  ]
+}
